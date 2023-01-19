@@ -4,27 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f639c4ff-6877-4fe0-94ac-caa12025ae21" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/bstorm/akimts/ConnectionFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/bstorm/akimts/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/bstorm/akimts/dao/CrudDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/bstorm/akimts/dao/ProductDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/bstorm/akimts/dao/SupplierDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/bstorm/akimts/dao/impl/Converter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/bstorm/akimts/dao/impl/ProductDAOImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/bstorm/akimts/dao/impl/SupplierDAOImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/bstorm/akimts/models/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/bstorm/akimts/models/Supplier.java" afterDir="false" />
-    </list>
+    <list default="true" id="f639c4ff-6877-4fe0-94ac-caa12025ae21" name="Changes" comment="to prepared statement" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -128,11 +108,23 @@
       <workItem from="1674118164860" duration="55000" />
       <workItem from="1674118232852" duration="8837000" />
       <workItem from="1674132628641" duration="724000" />
-      <workItem from="1674134851673" duration="5620000" />
+      <workItem from="1674134851673" duration="6108000" />
     </task>
+    <task id="LOCAL-00001" summary="to prepared statement">
+      <created>1674143645803</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1674143645803</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="to prepared statement" />
+    <option name="LAST_COMMIT_MESSAGE" value="to prepared statement" />
   </component>
 </project>
