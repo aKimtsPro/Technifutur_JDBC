@@ -95,12 +95,81 @@ public class SupplierDAOImpl implements SupplierDAO {
     }
 
     @Override
-    public void update(Long id, Supplier entity) {
+    public boolean update(Long id, Supplier entity) {
+
+        String sql = """
+                UPDATE suppliers
+                SET
+                    company_name = ?
+                    ,contact_name = ?
+                    ,contact_title = ?
+                    ,address = ?
+                    ,city = ?
+                    ,region = ?
+                    ,postal_code = ?
+                    ,country = ?
+                    ,phone = ?
+                    ,fax = ?
+                    ,homepage = ?
+                WHERE supplier_id = ?
+                """;
+
+        try(
+                Connection connection = ConnectionFactory.createConnection();
+                PreparedStatement stmt = connection.prepareStatement( sql );
+        ){
+
+            stmt.setString( 1, entity.getCompany() );
+            stmt.setString( 2, entity.getContactName() );
+            stmt.setString( 3, entity.getContactTitle() );
+            stmt.setString( 4, entity.getAddress() );
+            stmt.setString( 5, entity.getCity() );
+            stmt.setString( 6, entity.getRegion() );
+            stmt.setString( 7, entity.getPostalCode() );
+            stmt.setString( 8, entity.getCountry() );
+            stmt.setString( 9, entity.getPhone() );
+            stmt.setString( 10, entity.getFax() );
+            stmt.setString( 11, entity.getHomepage() );
+            stmt.setLong( 12, id );
+
+            return stmt.executeUpdate() == 1;
+
+        }
+        catch (SQLException ex){
+            throw new RuntimeException("error in data access", ex);
+        }
 
     }
 
     @Override
     public void delete(Long id) {
+
+        String sql = """
+                DELETE FROM suppliers WHERE supplier_id = ?
+                """;
+
+        String sqlNull = """
+                UPDATE products SET supplier_id=null WHERE supplier_id = ?
+                """;
+
+        try(
+            Connection connection = ConnectionFactory.createConnection();
+            PreparedStatement stmt = connection.prepareStatement( sql );
+            PreparedStatement stmtNull = connection.prepareStatement( sqlNull );
+        ){
+
+            stmtNull.setLong(1, id);
+            stmtNull.executeUpdate();
+
+            stmt.setLong(1, id);
+
+            if( stmt.executeUpdate() != 1 )
+                throw new RuntimeException("supplier not found");
+
+        }
+        catch( SQLException ex ){
+            throw new RuntimeException("error in data access", ex);
+        }
 
     }
 

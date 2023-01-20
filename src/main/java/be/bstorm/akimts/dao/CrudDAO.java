@@ -13,7 +13,7 @@ public interface CrudDAO<TENTITY, TID> {
     Optional<TENTITY> getOne( TID id );
 
     // Update
-    void update(TID id, TENTITY entity);
+    boolean update(TID id, TENTITY entity);
 
     // Delete
     void delete(TID id);

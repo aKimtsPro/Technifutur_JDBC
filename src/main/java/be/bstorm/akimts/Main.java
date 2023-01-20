@@ -24,8 +24,14 @@ public class Main {
         Supplier s = new Supplier();
         s.setId( 999 );
         s.setCompany("Oracle");
-
+//
         supplierDAO.insert( s );
+
+        Supplier toCopy = supplierDAO.getOne(1L)
+                .orElseThrow();
+
+        supplierDAO.update(999L, toCopy);
+
 
     }
 }

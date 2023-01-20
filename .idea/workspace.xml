@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f639c4ff-6877-4fe0-94ac-caa12025ae21" name="Changes" comment="to prepared statement" />
+    <list default="true" id="f639c4ff-6877-4fe0-94ac-caa12025ae21" name="Changes" comment="to prepared statement">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/be/bstorm/akimts/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/bstorm/akimts/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/be/bstorm/akimts/dao/CrudDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/bstorm/akimts/dao/CrudDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/be/bstorm/akimts/dao/impl/ProductDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/bstorm/akimts/dao/impl/ProductDAOImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/be/bstorm/akimts/dao/impl/SupplierDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/bstorm/akimts/dao/impl/SupplierDAOImpl.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -108,7 +114,8 @@
       <workItem from="1674118164860" duration="55000" />
       <workItem from="1674118232852" duration="8837000" />
       <workItem from="1674132628641" duration="724000" />
-      <workItem from="1674134851673" duration="6108000" />
+      <workItem from="1674134851673" duration="6186000" />
+      <workItem from="1674202671042" duration="4431000" />
     </task>
     <task id="LOCAL-00001" summary="to prepared statement">
       <created>1674143645803</created>
@@ -117,7 +124,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674143645803</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="to prepared statement">
+      <created>1674143742505</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1674143742505</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

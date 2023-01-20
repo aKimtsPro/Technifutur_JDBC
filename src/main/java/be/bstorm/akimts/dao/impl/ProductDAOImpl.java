@@ -73,8 +73,8 @@ public class ProductDAOImpl implements ProductDAO {
     }
 
     @Override
-    public void update(Long id, Product entity) {
-
+    public boolean update(Long id, Product entity) {
+        return false;
     }
 
     @Override
