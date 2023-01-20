@@ -1,9 +1,8 @@
 package be.bstorm.akimts.dao.impl;
 
-import be.bstorm.akimts.ConnectionFactory;
+import be.bstorm.akimts.utils.ConnectionFactory;
 import be.bstorm.akimts.dao.ProductDAO;
 import be.bstorm.akimts.models.Product;
-import be.bstorm.akimts.models.Supplier;
 
 import java.sql.Connection;
 import java.sql.ResultSet;

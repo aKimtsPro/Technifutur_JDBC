@@ -1,8 +1,7 @@
 package be.bstorm.akimts.dao.impl;
 
-import be.bstorm.akimts.ConnectionFactory;
+import be.bstorm.akimts.utils.ConnectionFactory;
 import be.bstorm.akimts.dao.SupplierDAO;
-import be.bstorm.akimts.models.Product;
 import be.bstorm.akimts.models.Supplier;
 
 import java.sql.*;
@@ -158,13 +157,19 @@ public class SupplierDAOImpl implements SupplierDAO {
             PreparedStatement stmtNull = connection.prepareStatement( sqlNull );
         ){
 
+            connection.setAutoCommit( false );
+
             stmtNull.setLong(1, id);
             stmtNull.executeUpdate();
 
             stmt.setLong(1, id);
 
-            if( stmt.executeUpdate() != 1 )
+            if( stmt.executeUpdate() != 1 ) {
+                connection.rollback();
                 throw new RuntimeException("supplier not found");
+            }
+            else
+                connection.commit();
 
         }
         catch( SQLException ex ){

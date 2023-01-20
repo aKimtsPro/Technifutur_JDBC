@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f639c4ff-6877-4fe0-94ac-caa12025ae21" name="Changes" comment="to prepared statement">
+    <list default="true" id="f639c4ff-6877-4fe0-94ac-caa12025ae21" name="Changes" comment="SupplierDAO">
+      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/be/bstorm/akimts/ConnectionFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/bstorm/akimts/utils/ConnectionFactory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/be/bstorm/akimts/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/bstorm/akimts/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/be/bstorm/akimts/dao/CrudDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/bstorm/akimts/dao/CrudDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/be/bstorm/akimts/dao/impl/ProductDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/bstorm/akimts/dao/impl/ProductDAOImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/be/bstorm/akimts/dao/impl/SupplierDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/bstorm/akimts/dao/impl/SupplierDAOImpl.java" afterDir="false" />
     </list>
@@ -75,7 +76,7 @@
       <module name="demo-jdbc-technifutur" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="be.bstorm.akimts.*" />
+          <option name="PATTERN" value="be.bstorm.akimts.utils.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -115,7 +116,8 @@
       <workItem from="1674118232852" duration="8837000" />
       <workItem from="1674132628641" duration="724000" />
       <workItem from="1674134851673" duration="6186000" />
-      <workItem from="1674202671042" duration="4431000" />
+      <workItem from="1674202671042" duration="4753000" />
+      <workItem from="1674209562017" duration="1974000" />
     </task>
     <task id="LOCAL-00001" summary="to prepared statement">
       <created>1674143645803</created>
@@ -131,7 +133,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674143742505</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="SupplierDAO">
+      <created>1674207490448</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1674207490448</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -139,6 +148,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="to prepared statement" />
-    <option name="LAST_COMMIT_MESSAGE" value="to prepared statement" />
+    <MESSAGE value="SupplierDAO" />
+    <option name="LAST_COMMIT_MESSAGE" value="SupplierDAO" />
   </component>
 </project>

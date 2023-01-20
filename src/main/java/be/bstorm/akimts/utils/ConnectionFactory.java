@@ -1,4 +1,4 @@
-package be.bstorm.akimts;
+package be.bstorm.akimts.utils;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
